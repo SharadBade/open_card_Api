@@ -1,0 +1,201 @@
+{
+	"id": "2ecf4d44-a0e6-40c4-8b9b-7f050d322807",
+	"name": "OpenCart_RestAPI_CartModule",
+	"timestamp": "2023-12-20T13:57:12.409Z",
+	"collection_id": "16211957-4e5037a2-2022-47bb-8201-647c85e74b98",
+	"folder_id": 0,
+	"environment_id": "16211957-d7ed6e53-d1bc-4049-9e39-f80a61b3bbf3",
+	"totalPass": 9,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-12-20T13:57:10.764Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "8cc5e50f-58d1-44ef-b5f4-45279b10c595",
+			"name": "Create Session /Token",
+			"url": "http://192.168.1.3/opencart/upload/index.php?route=api/login",
+			"time": 76,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"checking success msg in response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"checking success msg in response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				76
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"checking success msg in response": true
+				}
+			]
+		},
+		{
+			"id": "1cbb793b-af4b-4fbc-b743-ef0c75f4f459",
+			"name": "Add Product to cart",
+			"url": "http://192.168.1.3/opencart/upload/index.php?route=api/cart/add?api_token=AUTH_VALUE",
+			"time": 64,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"checking success msg in response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"checking success msg in response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				64
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"checking success msg in response": true
+				}
+			]
+		},
+		{
+			"id": "4e55dff2-2a29-413a-8845-4220c020e923",
+			"name": "Cart Content",
+			"url": "http://192.168.1.3/opencart/upload/index.php?route=api/cart/products?api_token=AUTH_VALUE",
+			"time": 72,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				72
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "a4229988-f2f3-426a-b3a6-44ebea4af09c",
+			"name": "Edit product quantity in cart",
+			"url": "http://192.168.1.3/opencart/upload/index.php?route=api/cart/edit?api_token=AUTH_VALUE",
+			"time": 50,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"checking success msg in response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"checking success msg in response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				50
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"checking success msg in response": true
+				}
+			]
+		},
+		{
+			"id": "4f0d90b2-1986-43f9-a793-90762fc1401a",
+			"name": "Remove product quantity in cart Copy",
+			"url": "http://192.168.1.3/opencart/upload/index.php?route=api/cart/remove?api_token=AUTH_VALUE",
+			"time": 55,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"checking success msg in response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"checking success msg in response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				55
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"checking success msg in response": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 317,
+	"collection": {
+		"requests": [
+			{
+				"id": "8cc5e50f-58d1-44ef-b5f4-45279b10c595",
+				"method": "POST"
+			},
+			{
+				"id": "1cbb793b-af4b-4fbc-b743-ef0c75f4f459",
+				"method": "POST"
+			},
+			{
+				"id": "4e55dff2-2a29-413a-8845-4220c020e923",
+				"method": "GET"
+			},
+			{
+				"id": "a4229988-f2f3-426a-b3a6-44ebea4af09c",
+				"method": "POST"
+			},
+			{
+				"id": "4f0d90b2-1986-43f9-a793-90762fc1401a",
+				"method": "POST"
+			}
+		]
+	}
+}
